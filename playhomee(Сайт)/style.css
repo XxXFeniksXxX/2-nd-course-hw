@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.center {
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
+}
+
+.top{
+    padding-top: 217px;
+    background-image: url(img/top.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.top__content{
+    height: 1024px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 120px;
+    border-bottom: 0.5px solid #000915;
+}
+
+.top__zagolovok{
+    max-width: 788px;
+    height: 125px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 32px;
+}
+
+.top__text{
+    max-width: 481px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    padding-bottom: 44px;
+    flex-shrink: 0;
+}
+
+.po{
+    font-weight: bold;
+}
+
+.form__button {
+    text-decoration: none;
+    width: 234px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: #9C0332;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+        
+    }
+    .rt{
+        background-color: #000915;
+    }
+    
+    .rtycont{
+        padding-top: 128px;
+        padding-bottom: 132px;
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+    }
+
+    .rtycont__igry{
+        border-radius: 16px;
+        text-decoration: none;
+        width: 379px;
+        height: 300px;
+        font-style: normal;
+        font-weight: 600;
+        display: flex;
+        align-items: end;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 24px;
+        line-height: 32px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+    .rtycont__igry1{
+        background-image: url(img/game1.jpg);
+    }
+
+    .rtycont__igry2{
+        background-image: url(img/game2.jpg);
+    }
+
+    .rtycont__igry3{
+        background-image: url(img/game3.jpg);
+    }
+
+    .rtet{
+        text-decoration: none;
+        color: #FFFFFF;
+        padding-left: 32px;
+        margin-bottom: 32px;
+    }
