@@ -1,3 +1,30 @@
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
 * {
     padding: 0;
     margin: 0;
@@ -8,25 +35,25 @@
 }
 
 .top{
+    height: 1024px;
     padding-top: 217px;
     background-image: url(img/top.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-bottom: 0.5px solid #000915;
 }
 
 .top__content{
-    height: 1024px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding-left: 120px;
-    border-bottom: 0.5px solid #000915;
 }
 
 .top__zagolovok{
     max-width: 788px;
-    height: 125px;
+    max-height: 125px;
     color: #FFF;
     font-family: Montserrat;
     font-size: 64px;
@@ -67,7 +94,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-        
+    transition: all .4s;
+    animation: myAnim 1.5s ease 0.5s 2 alternate forwards;
+    }
+    .form__button:hover{
+        color: #000000;
     }
     .rt{
         background-color: #000915;
@@ -79,6 +110,7 @@
         display: flex;
         gap: 32px;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .rtycont__igry{
@@ -97,7 +129,10 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        
+        transition: all .3s;
+    }
+    .rtycont__igry:hover{
+        transform: scale(1.09);
     }
 
     .rtycont__igry1{
@@ -117,4 +152,46 @@
         color: #FFFFFF;
         padding-left: 32px;
         margin-bottom: 32px;
+        transition: .3s;
+    }
+    .rtet:hover{
+        color: red;
+    }
+    /* Телефонное разрешение 768px ---------------- */
+
+    @media (max-width: 768px) {
+        .center {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        .top{
+            padding-top: 238px;
+            height: 735px;
+        }
+        .top__zagolovok{
+            color: #FFF;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        .top__text{
+            color: #FFF;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 22px;
+            padding-bottom: 32px;
+        }
+        .top__content{
+            padding-left: 0;
+            align-items: center;
+        }
+        .rtycont{
+            padding-bottom: 127px;
+        }
     }
