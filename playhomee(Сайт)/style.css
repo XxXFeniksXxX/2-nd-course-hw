@@ -25,6 +25,9 @@
 		transform: scale(1);
 	}
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 * {
     padding: 0;
     margin: 0;
@@ -55,7 +58,6 @@
     max-width: 788px;
     max-height: 125px;
     color: #FFF;
-    font-family: Montserrat;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
@@ -66,17 +68,15 @@
 .top__text{
     max-width: 481px;
     color: #FFF;
-    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
     line-height: 32px;
     padding-bottom: 44px;
-    flex-shrink: 0;
 }
 
 .po{
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .form__button {
@@ -89,7 +89,6 @@
     border-radius: 30px;
     background: #9C0332;
     color: #FFF;
-    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -123,7 +122,6 @@
         display: flex;
         align-items: end;
         color: #FFF;
-        font-family: Montserrat;
         font-size: 24px;
         line-height: 32px;
         background-repeat: no-repeat;
@@ -171,7 +169,6 @@
         .top__zagolovok{
             color: #FFF;
             text-align: center;
-            font-family: Montserrat;
             font-size: 32px;
             font-style: normal;
             font-weight: 700;
@@ -180,7 +177,6 @@
         .top__text{
             color: #FFF;
             text-align: center;
-            font-family: Montserrat;
             font-size: 14px;
             font-style: normal;
             font-weight: 300;
