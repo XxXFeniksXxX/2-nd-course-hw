@@ -105,7 +105,7 @@ body{
     
     .rtycont{
         padding-top: 128px;
-        padding-bottom: 132px;
+        padding-bottom: 128px;
         display: flex;
         gap: 32px;
         justify-content: center;
@@ -155,6 +155,68 @@ body{
     .rtet:hover{
         color: red;
     }
+
+    .igryve{
+        margin-top: 233px;
+        justify-content: center;
+        display: flex;
+    }
+    /* Игра 1______________________________ */
+    .igra1{
+        height: 567px;
+        gap: 132px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .igra1__levo{
+        padding-top: 49px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .igra1__levo__zag{
+        color: #FFF;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .igra1__levo__text{
+        max-width: 584px;
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+    }
+
+    .igra1__levo__knopka{
+        width: 234.063px;
+        height: 48.603px;
+        border-radius: 30px;
+        background: #9C0332;
+
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        transition: all 0.5s;
+    }
+
+    .igra1__levo__knopka:hover{
+        color: #000000;
+    }
+
+    .pravo{
+        width: 485px;
+        height: 333px;
+        background-image: url(img/ira1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
     /* Телефонное разрешение 768px ---------------- */
 
     @media (max-width: 768px) {
@@ -189,5 +251,34 @@ body{
         }
         .rtycont{
             padding-bottom: 127px;
+        }
+
+        .igryve{
+            margin-top: 51px;
+        }
+        /* Игра1_________________________________ */
+        .igra1{
+            width: 375px;
+            gap: 0;
+            height: 653px;
+        }
+        .igra1__levo{
+            align-items: center;
+            padding-top: 0;
+        }
+
+        .igra1__levo__zag{
+            font-size: 32px;
+        }
+
+        .igra1__levo__text{
+            font-size: 14px;
+            line-height: 32px;
+            text-align: center;  
+        }
+
+        .pravo{
+            width: 344px;
+            height: 236px;
         }
     }
