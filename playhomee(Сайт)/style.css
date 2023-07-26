@@ -134,15 +134,15 @@ body{
     }
 
     .rtycont__igry1{
-        background-image: url(img/game1.jpg);
+        background-image: url(img/game1.png);
     }
 
     .rtycont__igry2{
-        background-image: url(img/game2.jpg);
+        background-image: url(img/game2.png);
     }
 
     .rtycont__igry3{
-        background-image: url(img/game3.jpg);
+        background-image: url(img/game3.png);
     }
 
     .rtet{
@@ -215,6 +215,15 @@ body{
         width: 485px;
         height: 333px;
         background-image: url(img/ira1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    /* Игра 2______________________________ */
+    .pravo_dva{
+        width: 481px;
+        height: 322px;
+        background-image: url(img/ira2.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
