@@ -192,6 +192,8 @@ body{
     }
 
     .igra1__levo__knopka{
+        text-decoration: none;
+        border: none;
         width: 234.063px;
         height: 48.603px;
         border-radius: 30px;
