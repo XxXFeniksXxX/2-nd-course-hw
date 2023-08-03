@@ -12,10 +12,10 @@ alert('Вы ввели некорретное значение');
 function game2(){
 let list = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 alert(`Запмни порядок слов: ${list.join(', ')}`);
-listRandom = list.sort(() => Math.random() - 0.5);
+let listRandom = list.sort(() => Math.random() - 0.5);
 
-WordOne = String(prompt(`Чему равнялся первый элемент массива? ${list.join(', ')}`));
-WordTwo = String(prompt(`Чему равнялся последний элемент массива? ${list.join(', ')}`));
+let WordOne = String(prompt(`Чему равнялся первый элемент массива? ${list.join(', ')}`));
+let WordTwo = String(prompt(`Чему равнялся последний элемент массива? ${list.join(', ')}`));
 list = ['яблоко', 'груша', 'дыня', 'виноград', 'персик', 'апельсин', 'мандарин'];
 // for (let li = 0; li < 7; li++)
 if (list[0].includes(WordOne.toLowerCase())) {
