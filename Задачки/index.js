@@ -305,8 +305,180 @@
 // const result = [...'Проверка превращения строки в массив'];
 // result.forEach((item) => console.log(item));
 
-function strengred (mas){
-    let rty = mas.splice(Math.round(mas.length / 2),1);//floor()
-    return mas;
- }
- console.log(strengred([1,2,3,4,5,6,7,8,9,10,11]));
+// function strengred (mas){
+//     let rty = mas.splice(Math.round(mas.length / 2),1);//floor()
+//     return mas;
+//  }
+//  console.log(strengred([1,2,3,4,5,6,7,8,9,10,11]));
+// __________________________________________________
+// function squareSum(numbers){
+//     let rty = numbers.map(s => s ** 2);
+//     sum = 0;
+//     rty.map((item) => sum += item);
+//     return sum;
+// }
+// console.log(squareSum([1,2]));
+// ______________________________________________________
+// function nearestSq(n){
+//     let rty = Math.sqrt(n);
+//     console.log (rty);
+//     let tre = Math.round(rty);
+//     console.log (tre);
+//     return tre ** 2;
+// }
+// console.log(nearestSq(9999));
+// _____________________________________
+// function solution(str){
+//   return str.split("").reverse().join("");
+// }
+// console.log(solution('werwr'));
+// __________________________________________________
+// function mango(quantity, price){
+//     return (quantity - Math.floor(quantity / 3)) * price
+// }
+
+// console.log(mango(9, 5));
+// _________________________________________________________
+// function litres(time) {
+//     return Math.floor(time * 0.5);
+//   }
+//   console.log(litres(12.3));
+// _______________________________________________________
+// function invert(array) {
+//     return array.map((num) => num * (-1));
+//  }
+// console.log(invert([1,-2,3,4,5]));
+// __________________________________________________________
+// function powersOfTwo(n){
+//     let rty =[];
+//     for (i = 0; i <= n;i++){
+//         rty[i] = 2 ** i;
+//     }
+//     return rty;
+//   }
+//   console.log(powersOfTwo(4));
+// ___________________________________________________________________
+// function grow(x){
+//     return x.reduce((a,b) => a*b);
+// }
+
+
+// console.log(grow([2, 2, 2, 2, 2, 2]));
+// ___________________________________________________
+// var summation = function (num) {
+//     let rty = 0;
+//     for (i = 0; i <= num; i++){
+//         rty = rty + i;
+//     }
+//     return rty;
+//   }
+
+//   console.log(summation(8));
+// ________________________________________________________
+// function removeExclamationMarks(s) {
+//     for (i = 0; i < s.length; i++){
+//         if (s[i] == '!'){
+//            let rty = s.replace(/!/i, '');
+//         }
+//         if (i >= s.length -1){
+//             return rty;
+//         }
+//     }
+//   }
+// ___________________________________________________________________
+// function removeExclamationMarks(s) {
+//     return s.split("").map((rty) => rty.replace(/!/i, '')).join("");
+// }
+
+//   console.log(removeExclamationMarks("Hello World!!"));
+// ___________________________________________________________________
+// function min(list){
+//     return Math.min(...list);
+// }
+
+// function max(list){
+//     return Math.max(...list);
+// }
+
+// console.log(min([-52, 56, 30, 29, -54, 0, -110]));
+// console.log(max([42, 54, 65, 87, 0]));
+// ______________________________________________________
+// function isPalindrome(x) {
+//     if (x.toLowerCase() == x.toLowerCase().split("").reverse().join("")){
+//         return true;
+//     } else {
+//         return false;
+//     }
+//   }
+
+//   console.log(isPalindrome("hello"));
+// _________________________________________________
+// function findDifference(a, b) {
+//     return Math.abs((b.reduce((a,b) => a*b)) - (a.reduce((a,b) => a*b)));
+//   }
+
+//   console.log(findDifference([16,25,24], [28,21,9]));
+// _________________________________________________________
+// function sumStr(a,b) {
+//   return String(Number(a) + Number(b));
+// }
+
+// console.log(sumStr("34","5"));
+// __________________________________________________
+// function bmi(weight, height) {
+//     if (weight.length == 0 && height.length == 0){ 
+//         return "Underweight";
+//     }
+//     let rty = Math.floor(weight / height ** 2);
+//     if (rty <= '18.5'){
+//         return "Underweight";
+//     } else if(rty <= '25.0'){
+//         return "Normal";
+//     }
+//     else if(rty <= '30.0'){
+//         return "Overweight";
+//     }
+//     else if(rty > '30'){
+//         return "Obese";
+//     } else {
+//         return "Underweight";
+//     }
+
+// }
+
+//   console.log(bmi(1.80));
+// __________________________________________________
+// function switchItUp(number){
+//     switch (number) {
+//             case 0:
+//                 return 'Zero';
+//             case 1:
+//                 return 'One';
+//             case 2:
+//                 return 'Two';
+//             case 3:
+//                 return 'Three';
+//             case 4:
+//                 return 'Four';
+//             case 5:
+//                 return 'Five';
+//             case 6:
+//                 return 'Six';
+//             case 7:
+//                 return 'Seven';
+//             case 8:
+//                 return 'Eight';
+//             case 9:
+//                 return 'Nine';
+//         }
+//     }
+// _________________________________________________________
+function areYouPlayingBanjo(name) {
+    if((name.toLowerCase().startsWith('r'))){
+        return name + ' plays banjo';
+    } else {
+        return name + " does not play banjo";
+    }
+  }
+
+  console.log(areYouPlayingBanjo('etv'))
