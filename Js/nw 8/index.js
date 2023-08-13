@@ -88,4 +88,10 @@
 //       sayHi('Глеб');
 //     })
 
-    
+// Примеры
+// "the-stealth-warrior"превращается в"theStealthWarrior"
+
+// "The_Stealth_Warrior"превращается в"TheStealthWarrior"
+
+// "The_Stealth-Warrior"превращается в"TheStealthWarrior"
+

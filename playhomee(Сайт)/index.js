@@ -1,10 +1,10 @@
 // Игра1__________________________________
-const monthNumber = (nomerMonth) => {
-let nomer = prompt('Введите номер месяца');
-(nomer == 9 || nomer == 10 || nomer == 11) ? alert('Осень') : 
-(nomer == 12 || nomer == 1 || nomer == 2) ? alert('Зима') : 
-(nomer == 3 || nomer == 4 || nomer == 5) ? alert('Весна') : 
-(nomer == 6 || nomer == 7 || nomer == 8) ? alert('Лето') : 
+const monthNumber = (monthMonth) => {
+let month = prompt('Введите номер месяца');
+(month == 9 || month == 10 || month == 11) ? alert('Осень') : 
+(month == 12 || month == 1 || month == 2) ? alert('Зима') : 
+(month == 3 || month == 4 || month == 5) ? alert('Весна') : 
+(month == 6 || month == 7 || month == 8) ? alert('Лето') : 
 alert('Вы ввели некорретное значение');
 }
 

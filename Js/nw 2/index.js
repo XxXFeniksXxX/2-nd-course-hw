@@ -36,8 +36,8 @@
 // console.log (Number(a) + Number(b));
 
 // Задание 5______________________________
-let nomerMonth = prompt('Введите номер месяца');
-switch (nomerMonth) {
+let monthMonth = prompt('Введите номер месяца');
+switch (monthMonth) {
 	case '1':
 		console.log('Январь');
 		break;
