@@ -110,7 +110,7 @@
           <div class="comment-footer">
             <div class="likes">
               <span class="likes-counter">${comment.likes}</span>
-              <button id ="likestr" class="like-button"></button>
+              <button id ="likestr" class="like-button ${comment.like ? '-active-like' : ''}"></button>
             </div>
           </div>
         </li>`;
@@ -127,9 +127,6 @@ renderComments();
       const index = CommentsElement.dataset.index;
       console.log(clicker);
       console.log(Comments[index].like);
-      if (Comments[index].like == true){
-        LikeButton.classList.add("-active-like");
-      }
       }
     }
     likesIn();
@@ -159,7 +156,7 @@ renderComments();
         name: buttonName.value,
         coment: buttonComment.value,
         date: new Date().toLocaleString("ru", options),
-        likes: '0',
+        likes: Number('0'),
         like: false,
       });
       renderComments();
@@ -174,12 +171,13 @@ renderComments();
       const clicker = CommentsElement.dataset.clicker;
       const index = CommentsElement.dataset.index;
     CommentsElement.addEventListener("click", () =>{
-      if (clicker == true){
-        LikeButton.classList.remove("-active-like");
-        renderComments();
+      if (clicker == 'true'){
+        console.log('df');
+        Comments[index].like = false;
+        Comments[index].likes = Comments[index].likes - 1;
       } else {
-        LikeButton.classList.add("-active-like");
-        renderComments();
+        Comments[index].like = true;
+        Comments[index].likes = Comments[index].likes + 1;
       }
       renderComments();
       Obclick();
